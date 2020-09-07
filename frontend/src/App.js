@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 
 import {connect, sendMsg} from "./api";
+import Header from "./components/Header"
 
 class App extends Component {
   
@@ -19,6 +20,7 @@ class App extends Component {
   render() {
     return (
     <div classname="App">
+      <Header />
       <button onClick={this.send}>Hit</button>
     </div>
 
